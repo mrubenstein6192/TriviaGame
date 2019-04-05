@@ -1,0 +1,23 @@
+/* make GoT image background of jumbotron */
+
+/* .jumbotron {
+  background-image: url(../images/iron_throne.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+} */
+
+#quiz {
+  background-color: aquamarine;
+}
+
+.lead{
+color: blue;
+font-style: italic;
+
+}
+
+.warning {
+  color: red;
+  font-weight: bold;
+}
+

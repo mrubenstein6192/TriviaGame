@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Game of Thrones Trivia!</title>
+</head>
+
+<body>
+
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Game of Thrones: the Trivia Game!</h1>
+    <p class="lead">(Disclaimer: this game refers strictly to the show, not the books!)</p>
+    <hr class="my-4">
+    <p class="warning">Warning: Questions and Answers may contain spoilers if you have not completed seasons 1-7.</p>
+    <p>You have 5 minutes.</p>
+    <a class="btn btn-dark btn-outline-light btn-lg" id="start" href="#" role="button">Start Trivia</a>
+    <p class id="timer">05:00</p>
+  </div>
+
+  <div class="container-fluid text-center" id="quiz">
+    <!-- radio buttons -->
+    <strong>1. Which direwolf belongs to the youngest Stark sibling?</strong>
+    <div id="answers">
+      <input type="radio" name="q1" value="a" id="q1a"><label for "q1a">Ghost</label>&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="q1" value="b" id="q1b"><label for "q1b">Nymeria</label>&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="q1" value="c" id="q1c"><label for "q1c">Lady</label>&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="q1" value="d" id="q1d"><label for "q1d">Shaggydog</label>
+    </div>
+    <br>
+    <strong>2. Which dragon is killed by the Night King?</strong>
+    <div id="answers">
+      <input type="radio" name="q2" value="a" id="q2a"><label for "q2a">Viserion</label>&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="q2" value="b" id="q2b"><label for "q2b">Drogon</label>&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="q2" value="c" id="q2c"><label for "q2c">Rhaegal</label>&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="q2" value="d" id="q2d"><label for "q2d">Balerion</label>
+    </div>
+    <br>
+    <strong>3. Which character is responsible for bringing Beric Dondarion back to life?</strong>
+    <div id="answers">
+      <input type="radio" name="q3" value="a" id="q3a"><label for "q3a">Melisandre aka the "Red
+        Woman"</label>&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="q3" value="b" id="q3b"><label for "q3b">Thoros of Myr</label>&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="q3" value="c" id="q3c"><label for "q3c">Lemoncloak</label>&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="q3" value="d" id="q3d"><label for "q3d">Arya</label>
+    </div>
+    <br>
+    <strong>4. Which castle is home to House Lannister?</strong>
+    <div id="answers">
+      <input type="radio" name="q4" value="a" id="q4a"><label for "q4a">Casterly Rock</label>&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="q4" value="b" id="q4b"><label for "q4b">Winterfell</label>&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="q4" value="c" id="q4c"><label for "q4c">RiverRun</label>&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="q4" value="d" id="q4d"><label for "q4d">Dragonstone</label>
+    </div>
+    <br>
+    <strong>5. How many Unsullied soldiers does Daenerys buy in Astapor?</strong>
+    <div id="answers">
+      <input type="radio" name="q5" value="a" id="q5a"><label for "q5a">5000</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="q5" value="b" id="q5b"><label for "q5b">6000</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="q5" value="c" id="q5c"><label for "q5c">7000</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="q5" value="d" id="q5d"><label for "q5d">8000</label>
+    </div>
+
+
+  </div>
+  <div class = "container-fluid text-center my-3">
+  
+  <button id = "submit">Submit Answers</button>
+    <br>
+    <br>
+  <div id="results"></div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
