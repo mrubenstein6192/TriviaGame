@@ -1,23 +1,81 @@
 /* make GoT image background of jumbotron */
 
-/* .jumbotron {
+.jumbotron {
   background-image: url(../images/iron_throne.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
-} */
+  background-blend-mode: screen;
+  background-color: lightslategray;
+  background-size: cover;
+}
 
-#quiz {
-  background-color: aquamarine;
+img{
+  opacity: .5;
+}
+
+h1{
+  color: black;
+  font-weight: bolder;
+
+}
+
+#timer{
+  color: black;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+#time-limit {
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+
+#quiz-form {
+  background-color: lightgray;
+  text-align: center;
+  padding: 5px;
+
 }
 
 .lead{
-color: blue;
+color: darkred;
 font-style: italic;
+font-size: x-large;
+font-weight: bold;
 
 }
 
 .warning {
-  color: red;
+  color: darkred;
+  font-weight: bold;
+  font-size: large;
+}
+
+body{
+  background-color: black;
+}
+
+#answers{
+  font-size: large;
+  color: black;
+
+}
+
+#results{
+  font-size: large;
+  color: white;
   font-weight: bold;
 }
 
+.form-check-label{
+  color: black;
+  font-size: large;
+}
+
+#answer-key {
+  color: white;
+  font-size: large;
+  font-style: italic;
+  text-align: center;
+}
