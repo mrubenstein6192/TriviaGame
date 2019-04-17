@@ -1,4 +1,7 @@
 # TriviaGame
+
+https://mrubenstein6192.github.io/TriviaGame/
+
 ## Game-Play
 
 The user will have 2 minutes to answer 10 questions based on the HBO series "Game of Thrones."
