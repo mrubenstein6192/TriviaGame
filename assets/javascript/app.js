@@ -1,3 +1,8 @@
+$(document).ready(function submitOn() {
+  if (clockRunning === false) {
+    $("#submit").hide();
+  }
+})
 
 var counter = 120;
 var intervalId;
@@ -120,8 +125,8 @@ var correct = 0;
 function renderQuestions() {
   // clear out form
   $("#quiz-form").empty();
-
-
+  $("#submit").show();
+  
 
   // Loop through questions array
   questions.forEach(function (question, index) {
@@ -154,7 +159,7 @@ function renderQuestions() {
       var $radio = $('<input>');
 
       // add attributes to provide the answer choice
-      // the "name" attribute is super important, all radio buttons per question need to have the same "name" so they know which question it applies to
+      // the "name" attribute is important, all radio buttons per question need to have the same "name" so they know which question it applies to
       $radio
         .attr({
           type: "radio",
@@ -211,11 +216,3 @@ function checkQuiz () {
 $("#submit").on("click", stop);
 $("#submit").on("click", checkQuiz);
 
-function submitOn() {
-  if (clockRunning === false) {
-    $("#submit").hide();
-  }
-  else {
-    $("#submit").show();
-  }
-}
