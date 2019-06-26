@@ -23,7 +23,6 @@ Answer choices are randomized each play of the game.
 
 Answer key will be dynamically displayed.
 
-Submit button will be hidden before the user hits "start."
 
 ### Author
 Mike Rubenstein
